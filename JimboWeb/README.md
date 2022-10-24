@@ -1,1 +1,25 @@
-This is Jimbo Personal Web Blog
+TimeLine BackLog: 
+
+2022.10
+
+Review Python Django material
+
+System Design all sections and urls / Links
+
+Design data model(Blog pages)
+
+_________________________________________________________________________________________________________________________________________________________________________
+
+2022.10
+
+BackEnd Python Django
+
+Create project structure
+
+Create blog Section APP
+
+Create blog Section Data Model
+
+Use Admin Feature to go through model
+
+_________________________________________________________________________________________________________________________________________________________________________
