@@ -23,3 +23,20 @@ Create blog Section Data Model
 Use Admin Feature to go through model
 
 _________________________________________________________________________________________________________________________________________________________________________
+
+2022.10 (Blog Section)
+
+FrontEnd React Set up
+
+FrontEnd Route
+
+BackEnd and FrontEnd communicate
+
+
+_________________________________________________________________________________________________________________________________________________________________________
+
+2022.10 (Blog Section)
+
+BackEnd Api and Endpoint Setup
+
+FrontEnd display Api 
