@@ -15,9 +15,5 @@ class BlogModel(models.Model):
     def __str__(self):
         return f"{self.title} {self.post_date}"
 
-    def display_detail(self):
-        return f"{self.title} {self.post_date} {self.articles} {self.tags} {self.image}"
-
-
 
     
