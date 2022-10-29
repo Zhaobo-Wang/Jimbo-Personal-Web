@@ -16,7 +16,6 @@ const navigation = () => {
               <Link to="/Project">Project</Link>
         </Menu.Item>
         <Menu.Item>Skill</Menu.Item>
-        <Menu.Item>Timeline</Menu.Item>
         <Menu.Item>Personal</Menu.Item>
     </Menu>
   )
