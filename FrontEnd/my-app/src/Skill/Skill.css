@@ -1,0 +1,50 @@
+.skill-panel {
+    height: calc(100vh - 60px);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    z-index: -10;
+    overflow: hidden;
+}
+
+.panel-format {
+    transform: rotate(90deg);
+    font-size: larger;
+    height: 185px;
+    width: calc(100vh - 60px);
+    /* bottom: calc((100vh - 60px) / 2.5); */
+    /* position: relative; */
+}
+
+.panel-text-format {
+    /* position: absolute;
+    bottom: calc(185px / 3);
+    right: 10px; */
+    text-align: center;
+    padding-top: calc(185px / 3);
+}
+
+
+.hobbies-panel {
+    background-color: antiquewhite;
+    position: absolute;
+    /* right: calc(-4.5vw - 185px); */
+    right: 0;
+    bottom: 0;
+}
+
+.hardware-panel {
+    background-color: rgb(184, 169, 150);
+    position: absolute;
+    right: calc(-4.5vw);
+    /* right each + 185px */
+}
+
+.backend-panel {
+    background-color: rgb(150, 244, 168);
+    position: absolute;
+    right: calc(-4.5vw + 185px);
+    /* right each + 185px */
+}

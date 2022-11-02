@@ -7,11 +7,12 @@ import Blog from './Blog/blog'
 import Blog_detail from './Blog/blog_detail';
 import Personal from './Personal/personal';
 import Skill from './Skill/skill';
+import './App.css'
 import 'antd/dist/antd.min.css'
 
 const App = () => {
     return (
-        <>
+        <div className='app'>
             <Navigation />
             <Routes>
                 <Route path="/Home" element={<Home />} />
@@ -21,7 +22,7 @@ const App = () => {
                 <Route path="/Skill" element={<Skill />} />
                 <Route path="/Personal" element={<Personal />} />
             </Routes>
-        </>
+        </div>
     )
 }
 

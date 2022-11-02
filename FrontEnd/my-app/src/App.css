@@ -1,0 +1,21 @@
+html {
+    min-height: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#root {
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.app {
+    min-height: calc(100vh);
+    margin: 0;
+    padding: 0;
+}
