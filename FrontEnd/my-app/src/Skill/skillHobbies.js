@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 const skillHobbies = () => {
     return (
         <div className='home-panel'>
-            <div className="hobbies-body-panel">Hobbies</div>
+            <div className="hobbies-body-panel">放几张照片：摄影（无人机）、滑雪，做饭，看枫叶</div>
             <div className='hobbies-panel-2 panel-format'>
                 <h1 className='panel-text-format'>
                     Hobbies

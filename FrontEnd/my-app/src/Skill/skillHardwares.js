@@ -7,13 +7,15 @@ const skillHardwares = () => {
         <div className='home-panel'>
             <div className="hardware-body-panel">
                 <h2>Hardware Skills:</h2>
-                <h4>Courses Taken:</h4>
-                <ul className='software-skills-list'>
-                    <li className="software-skills-item">React</li>
-                    <li className="software-skills-item">HTML</li>
-                    <li className="software-skills-item">CSS</li>
-                    <li className="software-skills-item">JavaScript</li>
-                    <li className="software-skills-item">SAPUI5</li>
+                <h4>McMaster Courses Taken:</h4>
+                <ul className='hardware-skills-list'>
+                    <li className="hardware-skills-item">Circuit and System</li>
+                    <li className="hardware-skills-item">Logic Design</li>
+                    <li className="hardware-skills-item">Microprocessor Project</li>
+                    <li className="hardware-skills-item">Control System</li>
+                    <li className="hardware-skills-item">Communication System</li>
+                    <li className="hardware-skills-item">Signal and System</li>
+                    <li className="hardware-skills-item">Electromagnetics</li>
                 </ul>
             </div>
             <div className='hobbies-panel panel-format'>
