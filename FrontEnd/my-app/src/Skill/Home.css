@@ -91,6 +91,7 @@
     position: absolute;
     left: calc(185px * 2);
     top: 0;
+    padding: 20px 40px;
 }
 
 /* 切到hobbies 页面 */
@@ -106,6 +107,7 @@
     position: absolute;
     left: calc(185px * 3);
     top: 0;
+    padding: 20px 40px;
 }
 
 
@@ -232,6 +234,7 @@
         position: absolute;
         left: calc(170px * 2);
         top: 0;
+        padding: 20px 40px;
     }
 
     /* 切到hobbies 页面 */
@@ -247,6 +250,7 @@
         position: absolute;
         left: calc(170px * 3);
         top: 0;
+        padding: 20px 40px;
     }
 
 

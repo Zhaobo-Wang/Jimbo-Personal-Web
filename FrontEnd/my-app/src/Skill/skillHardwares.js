@@ -5,7 +5,17 @@ import { Link } from 'react-router-dom'
 const skillHardwares = () => {
     return (
         <div className='home-panel'>
-            <div className="hardware-body-panel">Hardware</div>
+            <div className="hardware-body-panel">
+                <h2>Hardware Skills:</h2>
+                <h4>Courses Taken:</h4>
+                <ul className='software-skills-list'>
+                    <li className="software-skills-item">React</li>
+                    <li className="software-skills-item">HTML</li>
+                    <li className="software-skills-item">CSS</li>
+                    <li className="software-skills-item">JavaScript</li>
+                    <li className="software-skills-item">SAPUI5</li>
+                </ul>
+            </div>
             <div className='hobbies-panel panel-format'>
                 <h1 className='panel-text-format'>
                     Hobbies
