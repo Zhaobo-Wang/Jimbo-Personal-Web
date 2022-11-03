@@ -5,25 +5,20 @@ import "./Navigation.css"
 
 const navigation = () => {
       return (
-            <div className="navation-height">
-                  <Menu style={{ height: "60px" }} mode="horizontal">
-                        <Menu.Item key='Home'>
-                              <Link to="/Home">Home</Link>
-                        </ Menu.Item>
-                        <Menu.Item key='Blog'>
-                              <Link to="/Blog">Blog</Link>
-                        </Menu.Item>
-                        <Menu.Item key='Project'>
-                              <Link to="/Project">Project</Link>
-                        </Menu.Item>
-                        <Menu.Item key='Skill'>
-                              <Link to="/Skill">Skill</Link>
-                        </Menu.Item>
-                        <Menu.Item key='Personal'>
-                              <Link to="/Personal">Personal</Link>
-                        </Menu.Item>
-                  </Menu>
-            </div>
+            <Menu className='nagivation-style' style={{ height: "60px", backgroundColor: "#d6d7d7", fontSize: "16px", paddingTop: "5px"}} mode="horizontal" theme="dark">
+                  <Menu.Item key='Home' className='nav-item-style'>
+                        <Link to="/Home" className='nav-text-style'>Home</Link>
+                  </ Menu.Item>
+                  <Menu.Item key='Blog' className='nav-item-style'>
+                        <Link to="/Blog" className='nav-text-style'>Blog</Link>
+                  </Menu.Item>
+                  <Menu.Item key='Project' className='nav-item-style'>
+                        <Link to="/Project" className='nav-text-style'>Project</Link>
+                  </Menu.Item>
+                  <Menu.Item key='Personal' className='nav-item-style'>
+                        <Link to="/Personal" className='nav-text-style'>Personal</Link>
+                  </Menu.Item>
+            </Menu>
       )
 }
 
