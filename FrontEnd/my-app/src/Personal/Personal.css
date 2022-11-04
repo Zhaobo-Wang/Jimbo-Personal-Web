@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap');
+
+.personal-panel {
+    height: calc(100vh - 60px);
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #d6d7d7;
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+}
+
+.personal-contact-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 400px;
+    margin-top: 20vh;
+}
+
+.personal-image-panel {
+    width: 400px;
+    height: auto;
+    margin-top: 13vh;
+}
+
+.personal-image {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.contact-boby {
+    font-weight: 400;
+}
+
+.personal-contact-panel-body {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.panel-title {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.social-media-panel-body {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    font-size: 18px;
+}
+
+.a-color {
+    color: #000;
+}

@@ -16,7 +16,7 @@ const navigation = () => {
                         <Link to="/Project" className='nav-text-style'>Project</Link>
                   </Menu.Item>
                   <Menu.Item key='Personal' className='nav-item-style'>
-                        <Link to="/Personal" className='nav-text-style'>Personal</Link>
+                        <Link to="/Personal" className='nav-text-style'>Contact</Link>
                   </Menu.Item>
             </Menu>
       )
