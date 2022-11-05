@@ -55,24 +55,30 @@ const Blog = () => {
       <div className="blog-left-panel">
         <Search placeholder="input search text" size="large" onSearch={handleSearch} style={{ width: 400 }} allowClear className='blog-search'/>
         <div className='blog-categories'>
-          <Button onClick={() => { handleSearch('') }} type="text" style={{ color: '#097969' }}>AllPosts</Button>
-          <Button onClick={() => { handleSearch('django') }} type="text" style={{ color: '#097969' }}>BackEnd</Button>
-          <Button onClick={() => { handleSearch('react') }} type="text" style={{ color: '#097969' }}>FrontEnd</Button>
-          <Button onClick={() => { handleSearch('css') }} type="text" style={{ color: '#097969' }}>CSS</Button>
-          <Button onClick={() => { handleSearch('algorithm') }} type="text" style={{ color: '#097969' }}>Algorithm</Button>
+          <Button onClick={() => { handleSearch('') }} type="text" style={{ color: 'black' }} className="blog-category">AllPosts</Button>
+          <Button onClick={() => { handleSearch('django') }} type="text" style={{ color: 'black' }} className="blog-category">BackEnd</Button>
+          <Button onClick={() => { handleSearch('react') }} type="text" style={{ color: 'black' }} className="blog-category">FrontEnd</Button>
+          <Button onClick={() => { handleSearch('css') }} type="text" style={{ color: 'black' }} className="blog-category">CSS</Button>
+          <Button onClick={() => { handleSearch('algorithm') }} type="text" style={{ color: 'black' }} className="blog-category">Algorithm</Button>
+        </div>
+        <div className="blog-total-posts">
+          <h3 className="blog-total">
+            Total Posts:  <br/>
+            Latest Post Date:
+          </h3>
         </div>
       </div>
       <div className="blog-right-panel">
-        <div className="blog-posts">
-          <ul>
+        <div className="blog-posts-panel">
+          <ul className="blog-posts">
             {
               blogs?.map((blog) => {
                 return (
-                  <li>
-                    <Link to={`/blog/${blog?.id}`}>{blog?.title}</Link>
-                    <h6>{blog?.post_date}</h6>
-                    <h6>{blog?.tags}</h6>
-                  </li >
+                  <li className='blog-post'>
+                    <Link to={`/blog/${blog?.id}`} className="blog-title">{blog?.title}</Link>
+                    <h6 className="blog-post_date">{blog?.post_date}</h6>
+                    <h6 className="blog-tags">{blog?.tags}</h6>
+                  </li>
                 )
               })
             }

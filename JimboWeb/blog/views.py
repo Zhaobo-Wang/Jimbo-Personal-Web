@@ -8,6 +8,7 @@ from rest_framework.pagination import PageNumberPagination
 from rest_framework.authentication import TokenAuthentication
 from rest_framework.permissions import IsAuthenticatedOrReadOnly
 from rest_framework.filters import SearchFilter, OrderingFilter
+from django.db.models import Count
 # Create your views here.
 
 
@@ -23,7 +24,14 @@ class ApiBlogListView(ListAPIView):
     @api_view(['GET'])
     def blogs(request):
         blogs = BlogModel.objects.all()
-        serializer = BlogSerializer(blogs, many=True)
+        blogs_total_number = BlogModel.objects.count()
+        serializer = BlogSerializer(blogs, blogs_total_number, many=True)
+        return Response(serializer.data)
+
+    @api_view(['GET'])
+    def blogs_total_number(request):
+        blogs_total_number = BlogModel.objects.count()
+        serializer = BlogSerializer(blogs_total_number, many=True)
         return Response(serializer.data)
 
 
