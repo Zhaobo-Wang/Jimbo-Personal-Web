@@ -20,15 +20,25 @@
 }
 
 .nav-item-style::before {
-    color: #fff !important;
-    border-color: #fff !important;
+    color: #000 !important;
+    border-color: #000 !important;
     background-color: #000 !important;
+}
+
+.nav-item-style {
+    color: #000 !important;
+    border-color: #000 !important;
 }
 
 .nav-item-style:hover {
     color: #fff !important;
     border-color: #fff !important;
     background-color: #000 !important;
+}
+
+.nav-text-style {
+    color: #000 !important;
+    border-color: #fff !important;
 }
 
 .nav-text-style:hover {
@@ -38,5 +48,6 @@
 
 .ant-menu-submenu-popup.ant-menu-dark .ant-menu-item-selected,
 .ant-menu.ant-menu-dark .ant-menu-item-selected {
-    background-color: red !important;
+    background-color: #fff !important;
+    color: #fff !important;
 }
