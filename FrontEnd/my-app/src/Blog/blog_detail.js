@@ -17,7 +17,8 @@ const Blog_detail = () => {
         axios.get(`http://127.0.0.1:8000/blog/${id}`).then(
             (response) => {
                 setDetail(response.data)
-                setArticle_array(response.data?.articles.split('\n'))
+                setArticle_array(response.data?.articles.split('\n')) 
+                // 处理后端字段，把它们放入array中
                 setCodeImage(response.data?.image)
                 console.log(response.data?.image)
                 console.log(CodeImage)
@@ -40,6 +41,7 @@ const Blog_detail = () => {
                                 {article_array?.map(eachLine => {
                                     return <h4>{eachLine}</h4>
                                 })}
+                                {/* 一行一行render出来 */}
                             </div>
                             <h5 className='margin-left-5vw'>Post Date: {detail?.post_date}</h5>
                             <h5 className='margin-left-5vw'>Tags: {detail?.tags}</h5>

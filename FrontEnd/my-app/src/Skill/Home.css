@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poor+Story&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Antique+Soft&display=swap');
 
 .home-panel {
     height: calc(100vh - 60px);
@@ -34,12 +35,26 @@
     font-size: 40px;
     word-wrap: break-word;
     left: calc(185px / 2.5);
-    font-family: 'Poor Story', cursive;
+    font-family: 'Zen Antique Soft', serif;
+    font-weight: 500;
+    color: transparent;
 }
 
+.panel-text-format:hover {
+    color: white;
+}
+
+.software-panel:hover,
+.software-panel-2:hover,
+.hardware-panel:hover,
+.hardware-panel-2:hover,
+.hobbies-panel:hover,
+.hobbies-panel-2:hover {
+    opacity: 0.8;
+}
 
 .hobbies-panel {
-    background-color: #28908c;
+    background-image: url('../Image/MySelf/Hobbies-pic.png');
     position: absolute;
     right: 0;
     bottom: 0;
@@ -47,7 +62,7 @@
 }
 
 .hardware-panel {
-    background-color: #32BAAA;
+    background-image: url('../Image/MySelf/Hardware-pic.png');
     position: absolute;
     right: calc(185px);
     bottom: 0;
@@ -55,7 +70,7 @@
 }
 
 .software-panel {
-    background-color: #5DCCBF;
+    background-image: url('../Image/MySelf/Software-pic.png');
     position: absolute;
     right: calc(185px * 2);
     bottom: 0;
@@ -64,7 +79,7 @@
 
 /* 切到software 页面 */
 .software-panel-2 {
-    background-color: #5DCCBF;
+    background-image: url('../Image/MySelf/Software-pic.png');
     position: absolute;
     left: 0;
     bottom: 0;
@@ -80,7 +95,7 @@
 
 /* 切到hardware 页面 */
 .hardware-panel-2 {
-    background-color: #32BAAA;
+    background-image: url('../Image/MySelf/Hardware-pic.png');
     position: absolute;
     left: calc(185px);
     bottom: 0;
@@ -96,7 +111,7 @@
 
 /* 切到hobbies 页面 */
 .hobbies-panel-2 {
-    background-color: #28908c;
+    background-image: url('../Image/MySelf/Hobbies-pic.png');
     position: absolute;
     left: calc(185px * 2);
     bottom: 0;
@@ -177,12 +192,17 @@
         font-size: 40px;
         word-wrap: break-word;
         left: calc(170px / 2.5);
-        font-family: 'Poor Story', cursive;
+        font-family: 'Zen Antique Soft', serif;
+        font-weight: 500;
+        color: transparent;
     }
 
+    .panel-text-format:hover {
+        color: white;
+    }
 
     .hobbies-panel {
-        background-color: #28908c;
+        background-image: url('../Image/MySelf/Hobbies-pic.png');
         position: absolute;
         right: 0;
         bottom: 0;
@@ -190,7 +210,7 @@
     }
 
     .hardware-panel {
-        background-color: #32BAAA;
+        background-image: url('../Image/MySelf/Hardware-pic.png');
         position: absolute;
         right: calc(170px);
         bottom: 0;
@@ -198,16 +218,26 @@
     }
 
     .software-panel {
-        background-color: #5DCCBF;
+        background-image: url('../Image/MySelf/Software-pic.png');
         position: absolute;
         right: calc(170px * 2);
         bottom: 0;
         animation: slide-left 0.8s cubic-bezier(0.755, 0.050, 0.855, 0.060) both;
     }
 
+
+    .software-panel:hover,
+    .software-panel-2:hover,
+    .hardware-panel:hover,
+    .hardware-panel-2:hover,
+    .hobbies-panel:hover,
+    .hobbies-panel-2:hover {
+        opacity: 0.8;
+    }
+
     /* 切到software 页面 */
     .software-panel-2 {
-        background-color: #5DCCBF;
+        background-image: url('../Image/MySelf/Software-pic.png');
         position: absolute;
         left: 0;
         bottom: 0;
@@ -223,7 +253,7 @@
 
     /* 切到hardware 页面 */
     .hardware-panel-2 {
-        background-color: #32BAAA;
+        background-image: url('../Image/MySelf/Hardware-pic.png');
         position: absolute;
         left: calc(170px);
         bottom: 0;
@@ -239,7 +269,7 @@
 
     /* 切到hobbies 页面 */
     .hobbies-panel-2 {
-        background-color: #28908c;
+        background-image: url('../Image/MySelf/Hobbies-pic.png');
         position: absolute;
         left: calc(170px * 2);
         bottom: 0;
