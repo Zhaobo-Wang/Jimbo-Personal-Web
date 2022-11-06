@@ -6,30 +6,91 @@ const skillSoftware = () => {
     return (
         <div className='home-panel'>
             <div className="software-body-panel">
-                <h2>Software Skills:</h2>
-                <h4>FrontEnd Skills:</h4>
-                <ul className='software-skills-list'>
-                    <li className="software-skills-item">React</li>
-                    <li className="software-skills-item">HTML</li>
-                    <li className="software-skills-item">CSS</li>
-                    <li className="software-skills-item">JavaScript</li>
-                    <li className="software-skills-item">SAPUI5</li>
-                </ul>
-                <h4>BackEnd Skills:</h4>
-                <ul className='software-skills-list'>
-                    <li className="software-skills-item">Python</li>
-                    <li className="software-skills-item">Django</li>
-                    <li className="software-skills-item">Git</li>
-                    <li className="software-skills-item">Linux Operation</li>
-                    <li className="software-skills-item">MongoDB</li>
-                    <li className="software-skills-item">NodeJS</li>
-                    <li className="software-skills-item">Express.js</li>
-                </ul>
-                <h4>Other Skills:</h4>
-                <ul className='software-skills-list'>
-                    <li className="software-skills-item">SAS Data Analysis Certificate</li>
-                    <li className="software-skills-item">Data Algorithm</li>
-                </ul>
+                <h1>Software Skills:</h1>
+                <div className="software-skill-panel">
+                    <div className="front-end-panel">
+                        <h2>FrontEnd Skills:</h2>
+                        <ul className='software-skills-list'>
+                            <li className="software-skills-item react">
+                                <h3>React</h3>
+                                <div className='scale-width'>
+                                    <div className="scale-percent react">98%</div>
+                                </div>
+                            </li>
+                            <li className="software-skills-item html">
+                                <h3>Html</h3>
+                                <div className='scale-width'>
+                                    <div className="scale-percent html">100%</div>
+                                </div>
+                            </li>
+                            <li className="software-skills-item css">
+                                <h3>CSS</h3>
+                                <div className='scale-width'>
+                                    <div className="scale-percent css">98%</div>
+                                </div>
+                            </li>
+                            <li className="software-skills-item javascript">
+                                <h3>Javascript</h3>
+                                <div className='scale-width'>
+                                    <div className="scale-percent js">95%</div>
+                                </div>
+                            </li>
+                            <li className="software-skills-item sapui5">
+                                <h3>SAPUI5</h3>
+                                <div className='scale-width'>
+                                    <div className="scale-percent sapui5">90%</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div className="back-end-panel">
+                        <h2>BackEnd Skills:</h2>
+                        <ul className='software-skills-list'>
+                            <li className="software-skills-item python">
+                                <h3>Python</h3>
+                                <div className='scale-width'>
+                                    <div className="scale-percent python">94%</div>
+                                </div>
+                            </li>
+                            <li className="software-skills-item django">
+                                <h3>Django</h3>
+                                <div className='scale-width'>
+                                    <div className="scale-percent django">94%</div>
+                                </div>
+                            </li>
+                            <li className="software-skills-item git">
+                                <h3>Git</h3>
+                                <div className='scale-width'>
+                                    <div className="scale-percent git">98%</div>
+                                </div>
+                            </li>
+                            <li className="software-skills-item linux">
+                                <h3>Linux</h3>
+                                <div className='scale-width'>
+                                    <div className="scale-percent linux">85%</div>
+                                </div>
+                            </li>
+                            <li className="software-skills-item mongoDB">
+                                <h3>MongoDB</h3>
+                                <div className='scale-width'>
+                                    <div className="scale-percent mongoDB">95%</div>
+                                </div>
+                            </li>
+                            <li className="software-skills-item nodeJS">
+                                <h3>NodeJS</h3>
+                                <div className='scale-width'>
+                                    <div className="scale-percent NodeJS">95%</div>
+                                </div>
+                            </li>
+                            <li className="software-skills-item express">
+                                <h3>Express</h3>
+                                <div className='scale-width'>
+                                    <div className="scale-percent express">92%</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
             <div className='hobbies-panel panel-format'>
                 <h1 className='panel-text-format'>

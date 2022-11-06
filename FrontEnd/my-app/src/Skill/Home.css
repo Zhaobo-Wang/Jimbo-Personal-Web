@@ -93,6 +93,81 @@
     padding: 20px 40px;
 }
 
+.software-skill-panel,
+.hardware-skill-panel {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 6vw;
+}
+
+.front-end-panel,
+.back-end-panel,
+.course-panel,
+.other-skills-panel {
+    width: 28vw;
+}
+
+.scale-width {
+    width: 25vw;
+    background-color: black;
+    opacity: 0.4;
+}
+
+.scale-percent {
+    background-color: grey;
+    opacity: 1;
+}
+
+.react,
+.css,
+.git {
+    width: calc(25vw * 0.98);
+}
+
+.js,
+.mongoDB,
+.NodeJS {
+    width: calc(25vw * 0.95);
+}
+
+.sapui5 {
+    width: calc(25vw * 0.9);
+}
+
+.python,
+.django {
+    width: calc(25vw * 0.94);
+}
+
+.linux {
+    width: calc(25vw * 0.85);
+}
+
+.express {
+    width: calc(25vw * 0.92);
+}
+
+.aa {
+    width: calc(25vw);
+}
+
+.a {
+    width: calc(25vw * 0.95);
+}
+
+.ab {
+    width: calc(25vw * 0.9);
+}
+
+.bb {
+    width: calc(25vw * 0.85);
+}
+
+.b {
+    width: calc(25vw * 0.8);
+}
+
 /* 切到hardware 页面 */
 .hardware-panel-2 {
     background-image: url('../Image/MySelf/Hardware-pic.png');
@@ -106,7 +181,7 @@
     position: absolute;
     left: calc(185px * 2);
     top: 0;
-    padding: 20px 40px;
+    padding: 20px 60px;
 }
 
 /* 切到hobbies 页面 */
@@ -251,6 +326,81 @@
         padding: 20px 40px;
     }
 
+    .software-skill-panel,
+    .hardware-skill-panel {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 3vw;
+    }
+
+    .front-end-panel,
+    .back-end-panel,
+    .course-panel,
+    .other-skills-panel {
+        width: 25vw;
+    }
+
+    .scale-width {
+        width: 20vw;
+        background-color: black;
+        opacity: 0.4;
+    }
+
+    .scale-percent {
+        background-color: grey;
+        opacity: 1;
+    }
+
+    .react,
+    .css,
+    .git {
+        width: calc(20vw * 0.98);
+    }
+
+    .js,
+    .mongoDB,
+    .NodeJS {
+        width: calc(20vw * 0.95);
+    }
+
+    .sapui5 {
+        width: calc(20vw * 0.9);
+    }
+
+    .python,
+    .django {
+        width: calc(20vw * 0.94);
+    }
+
+    .linux {
+        width: calc(20vw * 0.85);
+    }
+
+    .express {
+        width: calc(20vw * 0.92);
+    }
+
+    .aa {
+        width: calc(20vw);
+    }
+
+    .a {
+        width: calc(20vw * 0.95);
+    }
+
+    .ab {
+        width: calc(20vw * 0.9);
+    }
+
+    .bb {
+        width: calc(20vw * 0.85);
+    }
+
+    .b {
+        width: calc(20vw * 0.8);
+    }
+
     /* 切到hardware 页面 */
     .hardware-panel-2 {
         background-image: url('../Image/MySelf/Hardware-pic.png');
@@ -264,7 +414,7 @@
         position: absolute;
         left: calc(170px * 2);
         top: 0;
-        padding: 20px 40px;
+        padding: 20px 60px;
     }
 
     /* 切到hobbies 页面 */

@@ -9,6 +9,7 @@ from rest_framework.authentication import TokenAuthentication
 from rest_framework.permissions import IsAuthenticatedOrReadOnly
 from rest_framework.filters import SearchFilter, OrderingFilter
 from django.db.models import Count
+from rest_framework.parsers import MultiPartParser, FormParser
 # Create your views here.
 
 
@@ -17,6 +18,7 @@ class ApiBlogListView(ListAPIView):
     serializer_class = BlogSerializer
     authentication_classes = (TokenAuthentication,)
     permission_classes = (IsAuthenticatedOrReadOnly,)
+    parser_classes = (MultiPartParser, FormParser)
     pagination_class = PageNumberPagination
     filter_backends = (SearchFilter, OrderingFilter)
     search_fields = ('title', 'articles', 'tags')
