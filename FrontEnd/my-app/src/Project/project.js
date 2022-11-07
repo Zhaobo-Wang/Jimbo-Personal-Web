@@ -1,9 +1,12 @@
 import React from 'react'
+import './Project.css'
 
-const project = () => {
+const Project = () => {
   return (
-    <div>This is project</div>
+    <div className="project-panel">
+      <div>This is project</div>
+    </div>
   )
 }
 
-export default project
+export default Project

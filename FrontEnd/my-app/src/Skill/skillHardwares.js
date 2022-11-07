@@ -6,7 +6,6 @@ const skillHardwares = () => {
     return (
         <div className='home-panel'>
             <div className="hardware-body-panel">
-                <h1>Hardware Skills:</h1>
                 <div className="hardware-skill-panel">
                     <div className="course-panel">
                         <h2>McMaster Courses Taken:</h2>
@@ -85,6 +84,7 @@ const skillHardwares = () => {
                         </ul>
                     </div>
                 </div>
+                <span className='hardware-art-word'>Hardware Skills</span>
             </div>
             <div className='hobbies-panel panel-format'>
                 <h1 className='panel-text-format'>

@@ -10,6 +10,8 @@ const Blog = () => {
 
   const [blogs, setBlogs] = useState(null);
   const { Search } = Input;
+  const [total, setTotal] = useState(0);
+  const [latest_date, setLatest_date] = useState(null);
 
   const suffix = (
     <AudioOutlined
@@ -44,6 +46,8 @@ const Blog = () => {
     axios.get('http://127.0.0.1:8000/blog/?ordering=-post_date').then((response) => {
       console.log(response.data.results)
       setBlogs(response.data.results)
+      setTotal(response.data.results[0].id)
+      setLatest_date(response.data.results[0].post_date)
     }).catch((e) => {
       <Alert message="Error" type="error" description={`${e}`} />
     })
@@ -53,7 +57,7 @@ const Blog = () => {
   return (
     <div className='blog-panel'>
       <div className="blog-left-panel">
-        <Search placeholder="input search text" size="large" onSearch={handleSearch} style={{ width: 400 }} allowClear className='blog-search'/>
+        <Search placeholder="Search Blog" size="large" onSearch={handleSearch} style={{ width: 400 }} allowClear className='blog-search' />
         <div className='blog-categories'>
           <Button onClick={() => { handleSearch('') }} type="text" style={{ color: 'black' }} className="blog-category">AllPosts</Button>
           <Button onClick={() => { handleSearch('django') }} type="text" style={{ color: 'black' }} className="blog-category">BackEnd</Button>
@@ -63,8 +67,8 @@ const Blog = () => {
         </div>
         <div className="blog-total-posts">
           <h3 className="blog-total">
-            Total Posts:  <br/>
-            Latest Post Date:
+            Total Posts: {total}<br />
+            Latest Post Date: {latest_date}
           </h3>
         </div>
       </div>
@@ -84,7 +88,7 @@ const Blog = () => {
             }
           </ul >
         </div>
-        <Pagination defaultCurrent={1} total={100} onChange={handlePagination} className="blog-pagination"/>
+        <Pagination defaultCurrent={1} total={100} onChange={handlePagination} className="blog-pagination" />
       </div>
     </div>
   )

@@ -6,7 +6,6 @@ const skillSoftware = () => {
     return (
         <div className='home-panel'>
             <div className="software-body-panel">
-                <h1>Software Skills:</h1>
                 <div className="software-skill-panel">
                     <div className="front-end-panel">
                         <h2>FrontEnd Skills:</h2>
@@ -91,6 +90,7 @@ const skillSoftware = () => {
                         </ul>
                     </div>
                 </div>
+                <span className='software-art-word'>Software Skills</span>
             </div>
             <div className='hobbies-panel panel-format'>
                 <h1 className='panel-text-format'>

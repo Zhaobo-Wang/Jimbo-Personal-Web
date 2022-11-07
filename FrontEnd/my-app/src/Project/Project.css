@@ -1,0 +1,10 @@
+.project-panel {
+    height: calc(100vh - 60px);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    overflow: hidden;
+    background-color: #d6d7d7;
+}

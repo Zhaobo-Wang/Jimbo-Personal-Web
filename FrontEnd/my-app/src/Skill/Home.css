@@ -77,6 +77,11 @@
     animation: slide-left 0.8s cubic-bezier(0.755, 0.050, 0.855, 0.060) both;
 }
 
+.skill-link {
+    color: #fff !important;
+    font-size: 50px;
+}
+
 /* 切到software 页面 */
 .software-panel-2 {
     background-image: url('../Image/MySelf/Software-pic.png');
@@ -91,6 +96,7 @@
     left: calc(185px);
     top: 0;
     padding: 20px 40px;
+    animation: scale-up-center 0.8s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 
 .software-skill-panel,
@@ -99,6 +105,32 @@
     flex-direction: row;
     justify-content: center;
     gap: 6vw;
+    margin-bottom: 20vh;
+    font-family: 'Zen Antique Soft', serif;
+}
+
+.software-art-word {
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    background: linear-gradient(90deg, #f38b8b 15%, #a3a5a8 76%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-size: 100px;
+    font-family: 'Zen Antique Soft', serif;
+    -webkit-animation: tracking-in-expand 1.6s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    animation: tracking-in-expand 1.6s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+.hardware-art-word {
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    background: linear-gradient(90deg, #f38bd0 15%, #a3a5a8 76%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-size: 100px;
+    font-family: 'Zen Antique Soft', serif;
+    -webkit-animation: tracking-in-expand 1.6s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    animation: tracking-in-expand 1.6s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 }
 
 .front-end-panel,
@@ -110,12 +142,12 @@
 
 .scale-width {
     width: 25vw;
-    background-color: black;
+    background-color: #000;
     opacity: 0.4;
 }
 
 .scale-percent {
-    background-color: grey;
+    background-color: #B84848;
     opacity: 1;
 }
 
@@ -182,6 +214,7 @@
     left: calc(185px * 2);
     top: 0;
     padding: 20px 60px;
+    animation: scale-up-center 0.8s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 
 /* 切到hobbies 页面 */
@@ -200,6 +233,7 @@
     padding: 20px 40px;
 }
 
+/* 所有动画 */
 
 @keyframes slide-left {
     0% {
@@ -228,6 +262,67 @@
         transform: translateX(0%);
     }
 }
+
+@-webkit-keyframes scale-up-center {
+    0% {
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@keyframes scale-up-center {
+    0% {
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+/**
+ * ----------------------------------------
+ * animation tracking-in-expand
+ * ----------------------------------------
+ */
+@-webkit-keyframes tracking-in-expand {
+    0% {
+        letter-spacing: -0.5em;
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0.6;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes tracking-in-expand {
+    0% {
+        letter-spacing: -0.5em;
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0.6;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
 
 /* 一般电脑大小屏幕 */
 @media screen and (max-width: 1600px) {
@@ -310,6 +405,7 @@
         opacity: 0.8;
     }
 
+
     /* 切到software 页面 */
     .software-panel-2 {
         background-image: url('../Image/MySelf/Software-pic.png');
@@ -324,6 +420,7 @@
         left: calc(185px);
         top: 0;
         padding: 20px 40px;
+        animation: scale-up-center 0.8s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
     }
 
     .software-skill-panel,
@@ -332,6 +429,8 @@
         flex-direction: row;
         justify-content: center;
         gap: 3vw;
+        font-family: 'Zen Antique Soft', serif;
+        margin-bottom: 10vh;
     }
 
     .front-end-panel,
@@ -341,6 +440,30 @@
         width: 25vw;
     }
 
+    .software-art-word {
+        -webkit-text-fill-color: transparent;
+        color: transparent;
+        background: linear-gradient(90deg, #f38b8b 15%, #a3a5a8 76%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        font-size: 80px;
+        font-family: 'Zen Antique Soft', serif;
+        -webkit-animation: tracking-in-expand 1.6s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+        animation: tracking-in-expand 1.6s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    }
+
+    .hardware-art-word {
+        -webkit-text-fill-color: transparent;
+        color: transparent;
+        background: linear-gradient(90deg, #f38bd0 15%, #a3a5a8 76%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        font-size: 80px;
+        font-family: 'Zen Antique Soft', serif;
+        -webkit-animation: tracking-in-expand 1.6s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+        animation: tracking-in-expand 1.6s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    }
+
     .scale-width {
         width: 20vw;
         background-color: black;
@@ -348,7 +471,7 @@
     }
 
     .scale-percent {
-        background-color: grey;
+        background-color: #B84848;
         opacity: 1;
     }
 
@@ -415,6 +538,7 @@
         left: calc(170px * 2);
         top: 0;
         padding: 20px 60px;
+        animation: scale-up-center 0.8s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
     }
 
     /* 切到hobbies 页面 */
@@ -434,31 +558,4 @@
     }
 
 
-    @keyframes slide-left {
-        0% {
-            transform: translateX(100%);
-        }
-
-        50% {
-            transform: translateX(-10%);
-        }
-
-        100% {
-            transform: translateX(0%);
-        }
-    }
-
-    @keyframes slide-right {
-        0% {
-            transform: translateX(-100%);
-        }
-
-        50% {
-            transform: translateX(10%);
-        }
-
-        100% {
-            transform: translateX(0%);
-        }
-    }
 }
