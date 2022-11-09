@@ -17,7 +17,7 @@ const App = () => {
         <div className='app'>
             <Navigation />
             <Routes>
-                <Route path="/Home" element={<Home />} />
+                <Route path="/*" element={<Home />} />
                 <Route path="/Skill/Software" element={<SkillSoftware />} />
                 <Route path="/Skill/Hardware" element={<SkillHardwares />} />
                 <Route path="/Skill/Hobbies" element={<SkillHobbies />} />

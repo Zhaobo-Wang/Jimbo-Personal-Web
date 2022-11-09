@@ -1,10 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
 .project-panel {
     height: calc(100vh - 60px);
     margin: 0;
     padding: 0;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     position: relative;
     overflow: hidden;
     background-color: #d6d7d7;
+}
+
+.project-main-panel {
+    height: calc(100vh - 60px);
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.project-cards-panel {
+    position: absolute;
+    top: 30vh;
+    left: 40vw;
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+}
+
+.project-card {
+    height: 42vh;
+    width: 14vw;
+    background-color: aliceblue;
+    border-radius: 15px;
+    box-shadow: 3px 3px 10px #000;
+    position: relative;
+}
+
+.project-card-image {
+    height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.project-container {
+    position: absolute;
+    color: #fff;
+    bottom: 1vh;
+    left: 1vw;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.project-date {
+    font-size: 15px;
+}
+
+.project-title {
+    font-size: 25px;
+}
+
+.project-slider-panel {
+    position: absolute;
+    left: 40vw;
+    top: calc(42vh + 30vh + 5vh);
+    /* 卡片高度加上卡片上面高度加上与卡片的间距 */
+}
+
+.project-slider-button {
+    height: 50px;
+    width: 50px;
+    border-radius: 100px;
+    border: 1px solid;
+    background-color: transparent;
+    cursor: pointer;
+    margin-right: 1vw;
+}
+
+.project-main-text-container {
+    position: absolute;
+    bottom: 20vh;
+    left: 5vw;
+    width: 30vw;
+    font-family: 'Bitter', serif;
+}
+
+.project-main-post-date {
+    font-size: 20px;
+    color: #fff;
+    text-decoration: overline;
+}
+
+.project-main-personal_team_project {
+    font-size: 25px;
+    color: #fff;
+}
+
+.project-main-title {
+    font-size: 80px;
+    font-family: 'Bebas Neue', cursive;
+    color: #fff;
+}
+
+.read-more-btn {
+    padding: 1vh 2vw;
+    border-radius: 20px;
+    border: 1px solid;
+    background-color: transparent;
+    color: #fff;
+    margin: 2vh 2vw;
+}
+
+.project-main-body {
+    font-size: 20px;
+    color: #fff;
+    font-family: 'Roboto Slab', serif;
+}
+
+.project-hidden-line {
+    color: #fff;
+}
+
+.project-main-github-link {
+    color: #fff;
+    font-size: 15px;
 }

@@ -57,7 +57,7 @@ const Blog = () => {
   return (
     <div className='blog-panel'>
       <div className="blog-left-panel">
-        <Search placeholder="Search Blog" size="large" onSearch={handleSearch} style={{ width: 400 }} allowClear className='blog-search' />
+        <Search placeholder="Search Blog" size="large" onSearch={handleSearch} style={{ width: 420 }} allowClear className='blog-search' />
         <div className='blog-categories'>
           <Button onClick={() => { handleSearch('') }} type="text" style={{ color: 'black' }} className="blog-category">AllPosts</Button>
           <Button onClick={() => { handleSearch('django') }} type="text" style={{ color: 'black' }} className="blog-category">BackEnd</Button>

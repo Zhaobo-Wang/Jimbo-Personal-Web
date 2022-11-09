@@ -34,12 +34,12 @@
     font-family: 'EB Garamond', serif;
 }
 
-.ant-input {
+.ant-input-affix-wrapper {
     border-radius: 25px !important;
 }
 
-.ant-input-search {
-    border-radius: 25px !important;
+.ant-input-search-button {
+    display: none !important;
 }
 
 .blog-total {
@@ -48,7 +48,7 @@
     background: linear-gradient(to right bottom, #f38b8b, #a3a5a8 76%);
     width: 100%;
     padding: 8vh 8vw 8vh 8vw;
-    border-radius: 10px;
+    border-radius: 25px;
 }
 
 .blog-total:hover {
@@ -84,7 +84,7 @@
     flex-direction: column;
     text-align: center;
     justify-content: center;
-    border-radius: 10px;
+    border-radius: 25px;
 }
 
 .blog-post:hover {
