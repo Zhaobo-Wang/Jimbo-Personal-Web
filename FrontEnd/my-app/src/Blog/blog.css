@@ -4,7 +4,7 @@
 
 /* 全局 */
 .blog-panel {
-    height: calc(100vh - 60px);
+    height: calc(100vh);
     margin: 0;
     padding: 0;
     display: flex;
@@ -14,6 +14,18 @@
     overflow: hidden;
     background-color: #d6d7d7;
     gap: 5vw;
+}
+
+.blog-main-nav-container {
+    position: absolute;
+    top: 3vh;
+    left: 5vw;
+}
+
+.blog-main-panel {
+    position: absolute;
+    top: 60px;
+    left: 0;
 }
 
 /* 左侧 */
@@ -35,6 +47,7 @@
 
 .blog-search {
     font-family: 'EB Garamond', serif;
+    width: 100% !important;
 }
 
 .ant-input-affix-wrapper {
@@ -169,16 +182,23 @@
 
 /* detail全局 */
 .blog-detail-panel {
-    height: calc(100vh - 60px);
+    height: calc(100vh);
     margin: 0;
     padding: 0;
+    overflow: hidden;
+    background-color: #d6d7d7;
+    font-family: 'Noto Serif SC', serif;
+    position: relative;
+}
+
+.blog-detail-main-panel {
+    position: absolute;
+    top: 14vh;
+    left: 20vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
-    background-color: #d6d7d7;
-    font-family: 'Noto Serif SC', serif;
 }
 
 .detail-article {

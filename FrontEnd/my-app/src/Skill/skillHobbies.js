@@ -1,10 +1,13 @@
 import React from 'react'
 import './Home.css'
 import { Link } from 'react-router-dom'
-
+import Navigation from '../Navigation/navigation'
 const skillHobbies = () => {
     return (
         <div className='home-panel'>
+            <div className="hobbies-main-nav-container">
+                <Navigation />
+            </div>
             <div className="hobbies-body-panel">放几张照片：摄影（无人机）、滑雪，做饭，看枫叶</div>
             <div className='hobbies-panel-2 panel-format'>
                 <h1 className='panel-text-format'>

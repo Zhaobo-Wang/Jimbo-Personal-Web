@@ -2,7 +2,7 @@ import './Project.css'
 import '../App.css'
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
-
+import Navigation from '../Navigation/navigation'
 
 const Project_main_panel = (props) => {
 
@@ -30,14 +30,17 @@ const Project_main_panel = (props) => {
 
   return (
     <>
-      <div className="overlay" style={{ backgroundColor: displayBody ? '#d6d7d7' : '#d6d7d7', width: '100vw', height: '100vh', zIndex: displayBody ? '20' : '0' }}>
+      <div className="overlay" style={{ backgroundColor: displayBody ? '#d6d7d7' : '#d6d7d7', width: '100vw', height: '100vh' }}>
         <img src={`http://127.0.0.1:8000${project?.image_url}`}
           alt="no background"
           className='project-background-image'
           style={{ display: displayBody ? "none" : "block" }}></img>
-        <div className='project-main-text-container' style={{ width: displayBody ? "34vw" : "30vw", bottom: displayBody ? "5vh" : "20vh", left: displayBody ? "2vw" : "5vw" }}>
+        <div className="project-main-nav-container">
+          <Navigation />
+        </div>
+        <div className='project-main-text-container' style={{ width: displayBody ? "34vw" : "30vw", bottom: displayBody ? "10vh" : "20vh", left: displayBody ? "3vw" : "5vw" }}>
           <div className="project-main-post-date">{displayBody ? "" : project?.project_date}</div>
-          <div className="project-main-title" style={{ fontSize: displayBody ? "45px" : "80px" }}>{project?.title}</div>
+          <div className="project-main-title" style={{ fontSize: displayBody ? "45px" : "80px", color: displayBody ? "#000":"#fff"}}>{project?.title}</div>
           <div className="project-main-personal_team_project">{displayBody ? "" : project?.personal_team_project}</div>
           <div className="project-main-personal_team_project">{displayBody ? "" : project?.category}</div>
           <div className="project-main-body" style={{ zIndex: displayBody ? '20' : '0' }}>
@@ -53,7 +56,7 @@ const Project_main_panel = (props) => {
                 ""
             }
           </div>
-          <button onClick={handleClick} className="read-more-btn">{displayBody ? 'Show Less' : 'Read More'}</button>
+          <button onClick={handleClick} className="read-more-btn" style={{color: displayBody? "#000":"#fff"}}>{displayBody ? 'Show Less' : 'Read More'}</button>
         </div>
       </div>
     </>

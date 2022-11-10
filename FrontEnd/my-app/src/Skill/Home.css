@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Zen+Antique+Soft&display=swap');
 
 .home-panel {
-    height: calc(100vh - 60px);
+    height: calc(100vh);
     margin: 0;
     padding: 0;
     display: flex;
@@ -13,8 +13,35 @@
 }
 
 .Home-body-panel {
-    height: 100%;
+    height: calc(100vh - 60px);
     width: calc(100vw - (185px * 3));
+    position: absolute;
+    top: 82px;
+    left: 1vw;
+}
+
+.home-main-nav-container {
+    position: absolute;
+    top: 3vh;
+    left: 5vw;
+}
+
+.software-main-nav-container {
+    position: absolute;
+    top: 3vh;
+    left: calc(5vw + 185px);
+}
+
+.hardware-main-nav-container {
+    position: absolute;
+    top: 3vh;
+    left: calc(5vw + (185px * 2));
+}
+
+.hobbies-main-nav-container {
+    position: absolute;
+    top: 3vh;
+    left: calc(5vw + (185px * 3));
 }
 
 .Home-image {
@@ -24,7 +51,7 @@
 
 .panel-format {
     width: 185px;
-    height: calc(100vh - 60px);
+    height: calc(100vh);
     position: relative;
 }
 
@@ -55,6 +82,8 @@
 
 .hobbies-panel {
     background-image: url('../Image/MySelf/Hobbies-pic.png');
+    background-size: cover;
+    object-fit: fill;
     position: absolute;
     right: 0;
     bottom: 0;
@@ -63,6 +92,7 @@
 
 .hardware-panel {
     background-image: url('../Image/MySelf/Hardware-pic.png');
+    background-size: cover;
     position: absolute;
     right: calc(185px);
     bottom: 0;
@@ -71,6 +101,7 @@
 
 .software-panel {
     background-image: url('../Image/MySelf/Software-pic.png');
+    background-size: cover;
     position: absolute;
     right: calc(185px * 2);
     bottom: 0;
@@ -85,6 +116,7 @@
 /* 切到software 页面 */
 .software-panel-2 {
     background-image: url('../Image/MySelf/Software-pic.png');
+    background-size: cover;
     position: absolute;
     left: 0;
     bottom: 0;
@@ -94,7 +126,7 @@
 .software-body-panel {
     position: absolute;
     left: calc(185px);
-    top: 0;
+    top: 8vh;
     padding: 20px 40px;
     animation: scale-up-center 0.8s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
@@ -203,6 +235,7 @@
 /* 切到hardware 页面 */
 .hardware-panel-2 {
     background-image: url('../Image/MySelf/Hardware-pic.png');
+    background-size: cover;
     position: absolute;
     left: calc(185px);
     bottom: 0;
@@ -212,7 +245,7 @@
 .hardware-body-panel {
     position: absolute;
     left: calc(185px * 2);
-    top: 0;
+    top: 8vh;
     padding: 20px 60px;
     animation: scale-up-center 0.8s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
@@ -220,6 +253,7 @@
 /* 切到hobbies 页面 */
 .hobbies-panel-2 {
     background-image: url('../Image/MySelf/Hobbies-pic.png');
+    background-size: cover;
     position: absolute;
     left: calc(185px * 2);
     bottom: 0;
@@ -229,7 +263,7 @@
 .hobbies-body-panel {
     position: absolute;
     left: calc(185px * 3);
-    top: 0;
+    top: 8vh;
     padding: 20px 40px;
 }
 
@@ -328,7 +362,7 @@
 @media screen and (max-width: 1600px) {
 
     .home-panel {
-        height: calc(100vh - 60px);
+        height: calc(100vh);
         margin: 0;
         padding: 0;
         display: flex;
@@ -343,6 +377,30 @@
         width: calc(100vw - (170px * 3));
     }
 
+    .home-main-nav-container {
+        position: absolute;
+        top: 3vh;
+        left: 5vw;
+    }
+
+    .software-main-nav-container {
+        position: absolute;
+        top: 3vh;
+        left: calc(5vw + 170px);
+    }
+
+    .hardware-main-nav-container {
+        position: absolute;
+        top: 3vh;
+        left: calc(5vw + (170px * 2));
+    }
+
+    .hobbies-main-nav-container {
+        position: absolute;
+        top: 3vh;
+        left: calc(5vw + (170px * 3));
+    }
+
     .Home-image {
         max-height: 100%;
         max-width: 100%;
@@ -350,7 +408,7 @@
 
     .panel-format {
         width: 170px;
-        height: calc(100vh - 60px);
+        height: calc(100vh);
         position: relative;
     }
 
@@ -373,6 +431,7 @@
 
     .hobbies-panel {
         background-image: url('../Image/MySelf/Hobbies-pic.png');
+        background-size: cover;
         position: absolute;
         right: 0;
         bottom: 0;
@@ -381,6 +440,7 @@
 
     .hardware-panel {
         background-image: url('../Image/MySelf/Hardware-pic.png');
+        background-size: cover;
         position: absolute;
         right: calc(170px);
         bottom: 0;
@@ -389,6 +449,7 @@
 
     .software-panel {
         background-image: url('../Image/MySelf/Software-pic.png');
+        background-size: cover;
         position: absolute;
         right: calc(170px * 2);
         bottom: 0;
@@ -409,6 +470,7 @@
     /* 切到software 页面 */
     .software-panel-2 {
         background-image: url('../Image/MySelf/Software-pic.png');
+        background-size: cover;
         position: absolute;
         left: 0;
         bottom: 0;
@@ -418,7 +480,7 @@
     .software-body-panel {
         position: absolute;
         left: calc(185px);
-        top: 0;
+        top: 8vh;
         padding: 20px 40px;
         animation: scale-up-center 0.8s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
     }
@@ -527,6 +589,7 @@
     /* 切到hardware 页面 */
     .hardware-panel-2 {
         background-image: url('../Image/MySelf/Hardware-pic.png');
+        background-size: cover;
         position: absolute;
         left: calc(170px);
         bottom: 0;
@@ -536,7 +599,7 @@
     .hardware-body-panel {
         position: absolute;
         left: calc(170px * 2);
-        top: 0;
+        top: 8vh;
         padding: 20px 60px;
         animation: scale-up-center 0.8s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
     }
@@ -544,6 +607,7 @@
     /* 切到hobbies 页面 */
     .hobbies-panel-2 {
         background-image: url('../Image/MySelf/Hobbies-pic.png');
+        background-size: cover;
         position: absolute;
         left: calc(170px * 2);
         bottom: 0;
@@ -553,7 +617,7 @@
     .hobbies-body-panel {
         position: absolute;
         left: calc(170px * 3);
-        top: 0;
+        top: 8vh;
         padding: 20px 40px;
     }
 

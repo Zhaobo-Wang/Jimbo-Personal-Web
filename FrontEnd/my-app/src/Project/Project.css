@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 
 .project-panel {
-    height: calc(100vh - 60px);
+    height: calc(100vh);
     margin: 0;
     padding: 0;
     display: flex;
@@ -14,12 +14,11 @@
 }
 
 .project-main-panel {
-    height: calc(100vh - 60px);
+    height: calc(100vh);
     margin: 0;
     padding: 0;
     position: relative;
 }
-
 
 .project-background-image {
     height: 100%;
@@ -159,6 +158,12 @@
     color: #fff;
 }
 
+.project-main-nav-container {
+    position: absolute;
+    top: 3vh;
+    left: 5vw;
+}
+
 .project-main-text-container {
     position: absolute;
     bottom: 20vh;
@@ -212,15 +217,14 @@
 
 .project-main-body {
     font-size: 20px;
-    color: #fff;
     font-family: 'Roboto Slab', serif;
 }
 
 .project-hidden-line {
-    color: #fff;
+    color: #000;
 }
 
 .project-main-github-link {
-    color: #fff;
+    color: #000;
     font-size: 15px;
 }

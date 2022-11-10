@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import { Button } from 'antd';
 import './blog.css';
 import BlogpicNotFound from '../Image/MySelf/Blog-image-not-found.png'
+import Navigation from '../Navigation/navigation'
 
 const Blog_detail = () => {
     const [detail, setDetail] = useState(null)
@@ -30,36 +31,40 @@ const Blog_detail = () => {
 
     return (
         <div className='blog-detail-panel'>
-            <h1>{detail?.title}</h1>
-            <div className="detail-article">
-
-                {
-                    codeExample ?
-                        <>
-                            <div className="detail-article-body">
-                                <h4 className='detail-article-title'>Article</h4>
-                                {article_array?.map(eachLine => {
-                                    return <h4>{eachLine}</h4>
-                                })}
-                                {/* 一行一行render出来 */}
-                            </div>
-                            <h5 className='margin-left-5vw'>Post Date: {detail?.post_date}</h5>
-                            <h5 className='margin-left-5vw'>Tags: {detail?.tags}</h5>
-                        </>
-                        :
-                        <>
-                            <div className="blog-image-box">
-                                <img src={BlogpicNotFound} alt="no example" className='blog-image-not-found'></img>
-                            </div>
-                        </>
-                }
+            <div className="blog-main-nav-container">
+                <Navigation />
             </div>
-            <Button type="button" className="detail-button" onClick={() => { setCodeExample(!codeExample) }}>
-                Code Example
-            </Button>
-            <button className="detail-button">
-                <Link to=".." relative='path' className='detail-link'>Back to All</Link>
-            </button>
+            <div className="blog-detail-main-panel">
+                <h1>{detail?.title}</h1>
+                <div className="detail-article">
+                    {
+                        codeExample ?
+                            <>
+                                <div className="detail-article-body">
+                                    <h4 className='detail-article-title'>Article</h4>
+                                    {article_array?.map(eachLine => {
+                                        return <h4>{eachLine}</h4>
+                                    })}
+                                    {/* 一行一行render出来 */}
+                                </div>
+                                <h5 className='margin-left-5vw'>Post Date: {detail?.post_date}</h5>
+                                <h5 className='margin-left-5vw'>Tags: {detail?.tags}</h5>
+                            </>
+                            :
+                            <>
+                                <div className="blog-image-box">
+                                    <img src={BlogpicNotFound} alt="no example" className='blog-image-not-found'></img>
+                                </div>
+                            </>
+                    }
+                </div>
+                <Button type="button" className="detail-button" onClick={() => { setCodeExample(!codeExample) }}>
+                    Code Example
+                </Button>
+                <button className="detail-button">
+                    <Link to=".." relative='path' className='detail-link'>Back to All</Link>
+                </button>
+            </div>
         </div>
     )
 }

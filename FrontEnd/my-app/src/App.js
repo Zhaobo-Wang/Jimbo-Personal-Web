@@ -15,7 +15,6 @@ import 'antd/dist/antd.min.css'
 const App = () => {
     return (
         <div className='app'>
-            <Navigation />
             <Routes>
                 <Route path="/*" element={<Home />} />
                 <Route path="/Skill/Software" element={<SkillSoftware />} />

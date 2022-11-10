@@ -1,10 +1,13 @@
 import React from 'react'
 import './Home.css'
 import { Link } from 'react-router-dom'
-
+import Navigation from '../Navigation/navigation'
 const skillHardwares = () => {
     return (
         <div className='home-panel'>
+            <div className="hardware-main-nav-container">
+                <Navigation />
+            </div>
             <div className="hardware-body-panel">
                 <div className="hardware-skill-panel">
                     <div className="course-panel">

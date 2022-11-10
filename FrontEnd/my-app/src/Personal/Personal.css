@@ -1,12 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap');
 
 .personal-panel {
-    height: calc(100vh - 60px);
+    height: calc(100vh);
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #d6d7d7;
     font-family: 'Ubuntu', sans-serif;
+}
+
+.personal-main-nav-container {
+    position: absolute;
+    top: 3vh;
+    left: 5vw;
+}
+
+.personal-main-panel {
+    position: absolute;
+    top: 10vh;
+    left: 27vw;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -56,4 +68,12 @@
 
 .a-color {
     color: #000;
+}
+
+/* 一般电脑大小屏幕 */
+@media screen and (max-width: 1600px) {
+    .personal-main-panel {
+        left: 23vw;
+    }
+
 }

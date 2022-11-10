@@ -1,12 +1,15 @@
 import React from 'react'
 import './Home.css'
 import { Link } from 'react-router-dom'
-import Homepic from "../Image/MySelf/Home_pic.png"
 import Homepic2 from "../Image/MySelf/Home_pic_2.png"
+import Navigation from '../Navigation/navigation'
 
 const Home = () => {
     return (
         <div className='home-panel'>
+            <div className="home-main-nav-container">
+                <Navigation />
+            </div>
             <div className="Home-body-panel">
                 <img className='Home-image' src={Homepic2} alt="Homepic"></img>
             </div>

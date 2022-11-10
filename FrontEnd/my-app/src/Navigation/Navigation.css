@@ -3,51 +3,40 @@
 .nagivation-style {
     font-family: 'Josefin Sans', sans-serif;
     border-color: #d6d7d7 !important;
-    color: #000 !important;
+    color: #000;
     padding-left: 100px !important;
+    display: flex;
+    flex-direction: row;
+    gap: calc(5vw);
+    list-style-type: none;
+    font-size: 18px;
 }
 
 @media screen and (max-width: 1600px) {
-
     .nagivation-style {
         padding-left: 86px !important;
     }
 }
 
 .nagivation-style:hover {
-    color: #fff !important;
+    color: #000 !important;
     border-color: #fff !important;
 }
 
 .nav-item-style::before {
-    color: #000 !important;
+    color: #fff !important;
     border-color: #000 !important;
     background-color: #000 !important;
 }
 
 .nav-item-style {
-    color: #000 !important;
     border-color: #000 !important;
-}
-
-.nav-item-style:hover {
-    color: #fff !important;
-    border-color: #fff !important;
-    background-color: #000 !important;
 }
 
 .nav-text-style {
     color: #000 !important;
-    border-color: #fff !important;
 }
 
 .nav-text-style:hover {
-    color: #fff !important;
-    border-color: #fff !important;
-}
-
-.ant-menu-submenu-popup.ant-menu-dark .ant-menu-item-selected,
-.ant-menu.ant-menu-dark .ant-menu-item-selected {
-    background-color: #fff !important;
     color: #fff !important;
 }
