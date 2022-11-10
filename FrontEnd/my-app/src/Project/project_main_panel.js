@@ -29,12 +29,13 @@ const Project_main_panel = (props) => {
 
   return (
     <>
-      <div className="overlay" style={{ backgroundColor: displayBody ? '#7F7F7F' : '#d6d7d7', width: '100vw', height: '100vh', zIndex: displayBody ? '20':'0'}}>
-        <img></img>
+      <div className="overlay" style={{backgroundColor: displayBody ? '#000' : '#d6d7d7', width: '100vw', height: '100vh', zIndex: displayBody ? '20':'0'}}>
+        {/* <img src={`http://127.0.0.1:8000${project.image_url}`} alt="no background" className='project-background-image'></img> */}
         <div className='project-main-text-container' style={{ width: displayBody ? "34vw" : "30vw", bottom: displayBody ? "5vh" : "20vh", left: displayBody ? "2vw":"5vw"}}>
           <div className="project-main-post-date">{displayBody ? "" : project?.project_date}</div>
           <div className="project-main-title" style={{ fontSize: displayBody ? "45px" : "80px"}}>{project?.title}</div>
           <div className="project-main-personal_team_project">{displayBody ? "" : project?.personal_team_project}</div>
+          <div className="project-main-personal_team_project">{displayBody ? "" : project?.category}</div>
           <div className="project-main-body" style={{ zIndex: displayBody ? '20' : '0' }}>
             {
               displayBody ?

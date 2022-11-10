@@ -18,7 +18,10 @@
 
 /* 左侧 */
 .blog-left-panel {
-    margin-top: 20vh;
+    position: absolute;
+    left: 3vw;
+    top: 20vh;
+    width: calc(30vw - 3vw);
     display: flex;
     flex-direction: column;
     gap: 5vh;
@@ -45,9 +48,9 @@
 .blog-total {
     font-family: 'EB Garamond', serif;
     color: #fff;
-    background: linear-gradient(to right bottom, #f38b8b, #a3a5a8 76%);
+    background: #a3a5a8;
     width: 100%;
-    padding: 8vh 8vw 8vh 8vw;
+    padding: 8vh 7vw 8vh 7vw;
     border-radius: 25px;
 }
 
@@ -69,17 +72,31 @@
 }
 
 /* 右侧 */
-.blog-posts {
+
+.blog-right-panel {
+    position: absolute;
+    left: 30vw;
+    height: calc(100vh - 60px);
+    width: calc(100vw - 30vw);
     display: flex;
     flex-direction: column;
-    gap: 2vh;
+    justify-content: center;
+    text-align: center;
+}
+
+.blog-posts {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3vh;
 }
 
 .blog-post {
-    height: 20vh;
-    width: 40vw;
+    height: 40vh;
+    width: 20vw;
     background: linear-gradient(to right bottom, #E7E7E7, #9B9B9B);
-    box-shadow: 5px 5px 15px -2px rgba(62, 61, 61, 0.75);
+    box-shadow: 4px 4px 8px -2px rgba(62, 61, 61, 0.75);
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -87,20 +104,46 @@
     border-radius: 25px;
 }
 
-.blog-post:hover {
-    -webkit-animation: slide-x 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    animation: slide-x 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+.blog-post:nth-child(odd) {
+    background: radial-gradient(#1fe4f5, #3fbafe);
 }
 
-@keyframes slide-x {
+.blog-post:first-child {
+    background: radial-gradient(#60efbc, #58d5c9);
+}
+
+.blog-post:nth-child(even) {
+    background: radial-gradient(#FFA646, #F86041);
+}
+
+.blog-post:nth-child(2n+5) {
+    background: radial-gradient(#f588d8, #c0a3e5);
+}
+
+.blog-post:nth-child(2n+4) {
+    background: radial-gradient(#76b2fe, #b69efe);
+}
+
+.blog-post:last-child {
+    background: radial-gradient(#fbc1cc, #fa99b2);
+}
+
+
+
+.blog-post:hover {
+    -webkit-animation: slide-y 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-y 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes slide-y {
     0% {
         -webkit-transform: translateX(0);
         transform: translateX(0);
     }
 
     100% {
-        -webkit-transform: translateX(30px);
-        transform: translateX(30px);
+        -webkit-transform: translateY(-5px);
+        transform: translateY(-5px);
     }
 }
 
