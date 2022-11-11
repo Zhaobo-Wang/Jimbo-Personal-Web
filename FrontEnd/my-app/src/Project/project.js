@@ -3,7 +3,6 @@ import './Project.css'
 import axios from 'axios';
 import { Slider } from 'antd';
 import Project_main_panel from './project_main_panel';
-import Navigation from '../Navigation/navigation'
 
 const Project = () => {
 

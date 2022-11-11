@@ -30,34 +30,34 @@ const Project_main_panel = (props) => {
 
   return (
     <>
-      <div className="overlay" style={{ backgroundColor: displayBody ? '#d6d7d7' : '#d6d7d7', width: '100vw', height: '100vh' }}>
+      <div className='overlay' style={{ opacity: displayBody ? 0.4 : 1 }}>
         <img src={`http://127.0.0.1:8000${project?.image_url}`}
           alt="no background"
           className='project-background-image'
-          style={{ display: displayBody ? "none" : "block" }}></img>
-        <div className="project-main-nav-container">
-          <Navigation />
+        ></img>
+      </div>
+      <div className="project-main-nav-container navigation-animation" key={props.current} >
+        <Navigation className="navigation-animation" />
+      </div>
+      <div className='project-main-text-container' key={displayBody} style={{ width: displayBody ? "34vw" : "30vw", bottom: displayBody ? "10vh" : "20vh", left: displayBody ? "3vw" : "5vw" }}>
+        <div className="project-main-post-date">{displayBody ? "" : project?.project_date}</div>
+        <div className="project-main-title" style={{ fontSize: displayBody ? "45px" : "80px" }}>{project?.title}</div>
+        <div className="project-main-personal_team_project">{displayBody ? "" : project?.personal_team_project}</div>
+        <div className="project-main-personal_team_project">{displayBody ? "" : project?.category}</div>
+        <div className="project-main-body" style={{ zIndex: displayBody ? '20' : '0' }}>
+          {
+            displayBody ?
+              <div className="project-hidden-part">
+                {body_array?.map(eachLine => {
+                  return <h4 className='project-hidden-line'>$  {eachLine}</h4>
+                })}
+                <div className="project-main-github-link">GitHub Link: <a href={project?.github_link} className="project-main-github-link">{project?.github_link}</a></div>
+              </div>
+              :
+              ""
+          }
         </div>
-        <div className='project-main-text-container' style={{ width: displayBody ? "34vw" : "30vw", bottom: displayBody ? "10vh" : "20vh", left: displayBody ? "3vw" : "5vw" }}>
-          <div className="project-main-post-date">{displayBody ? "" : project?.project_date}</div>
-          <div className="project-main-title" style={{ fontSize: displayBody ? "45px" : "80px", color: displayBody ? "#000":"#fff"}}>{project?.title}</div>
-          <div className="project-main-personal_team_project">{displayBody ? "" : project?.personal_team_project}</div>
-          <div className="project-main-personal_team_project">{displayBody ? "" : project?.category}</div>
-          <div className="project-main-body" style={{ zIndex: displayBody ? '20' : '0' }}>
-            {
-              displayBody ?
-                <div className="project-hidden-part">
-                  {body_array?.map(eachLine => {
-                    return <h4 className='project-hidden-line'>$  {eachLine}</h4>
-                  })}
-                  <div className="project-main-github-link">GitHub Link: <a href={project?.github_link} className="project-main-github-link">{project?.github_link}</a></div>
-                </div>
-                :
-                ""
-            }
-          </div>
-          <button onClick={handleClick} className="read-more-btn" style={{color: displayBody? "#000":"#fff"}}>{displayBody ? 'Show Less' : 'Read More'}</button>
-        </div>
+        <button onClick={handleClick} className="read-more-btn" style={{ color: displayBody ? "#000" : "#fff" }}>{displayBody ? 'Show Less' : 'Read More'}</button>
       </div>
     </>
   )

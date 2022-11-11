@@ -263,8 +263,11 @@
 .hobbies-body-panel {
     position: absolute;
     left: calc(185px * 3);
-    top: 8vh;
-    padding: 20px 40px;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url('../Image/MySelf/hobbies-main-pic2.jpg');
+    background-size: contain;
 }
 
 /* 所有动画 */
@@ -617,9 +620,16 @@
     .hobbies-body-panel {
         position: absolute;
         left: calc(170px * 3);
-        top: 8vh;
-        padding: 20px 40px;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background-image: url('../Image/MySelf/hobbies-main-pic2.jpg');
+        background-size: 68% 100%;
     }
 
-
+    /* .hobbies-main-pic {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    } */
 }
