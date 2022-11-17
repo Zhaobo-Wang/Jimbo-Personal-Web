@@ -47,7 +47,7 @@ const Blog = () => {
     axios.get('https://zhaobo-web-backend.herokuapp.com/blog/?ordering=-post_date').then((response) => {
       console.log(response.data.results)
       setBlogs(response.data.results)
-      setTotal(response.data.results[0].id)
+      setTotal(response.data.count)
       setLatest_date(response.data.results[0].post_date)
     }).catch((e) => {
       <Alert message="Error" type="error" description={`${e}`} />

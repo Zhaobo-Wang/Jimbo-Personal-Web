@@ -31,6 +31,7 @@ const Project = () => {
 
   useEffect(() => {
     axios.get('https://zhaobo-web-backend.herokuapp.com/project/').then((response) => {
+      console.log(response.data)
       setTotal(response.data?.length)
       // 正常情况下render顺序【1，2，3，4】
       // 当点击像右滑或像左滑button时【2，3，4，1】
