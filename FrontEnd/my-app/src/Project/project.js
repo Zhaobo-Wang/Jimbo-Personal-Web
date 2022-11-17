@@ -30,7 +30,7 @@ const Project = () => {
   }
 
   useEffect(() => {
-    axios.get('http://127.0.0.1:8000/project').then((response) => {
+    axios.get('https://zhaobo-web-backend.herokuapp.com/project/').then((response) => {
       setTotal(response.data?.length)
       // 正常情况下render顺序【1，2，3，4】
       // 当点击像右滑或像左滑button时【2，3，4，1】
@@ -55,7 +55,7 @@ const Project = () => {
             return (
               <>
                 <div className="project-card" key={current}>
-                  <img src={`http://127.0.0.1:8000${project.image_url}`} alt="project" className='project-card-image' />
+                  <img src={`https://zhaobo-web-backend.herokuapp.com${project.image_url}`} alt="project" className='project-card-image' />
                   <div className="project-container">
                     <div className='project-date'>{project.project_date}</div>
                     <div className="project-title">{project.title}</div>

@@ -15,7 +15,7 @@ const Blog_detail = () => {
     const [codeExample, setCodeExample] = useState(true)
 
     useEffect(() => {
-        axios.get(`http://127.0.0.1:8000/blog/${id}`).then(
+        axios.get(`https://zhaobo-web-backend.herokuapp.com/blog/${id}`).then(
             (response) => {
                 setDetail(response.data)
                 setArticle_array(response.data?.articles.split('\n')) 

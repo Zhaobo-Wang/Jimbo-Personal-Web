@@ -25,7 +25,7 @@ const Blog = () => {
 
   const handleSearch = (value) => {
     console.log(value)
-    axios.get(`http://127.0.0.1:8000/blog/?ordering=-post_date&search=${value}`).then((response) => {
+    axios.get(`https://zhaobo-web-backend.herokuapp.com/blog/?ordering=-post_date&search=${value}`).then((response) => {
       console.log(response.data.results)
       setBlogs(response.data.results)
     }).catch((e) => {
@@ -35,7 +35,7 @@ const Blog = () => {
 
   const handlePagination = (value) => {
     console.log(value)
-    axios.get(`http://127.0.0.1:8000/blog/?ordering=-post_date&page=${value}`).then((response) => {
+    axios.get(`https://zhaobo-web-backend.herokuapp.com/blog/?ordering=-post_date&page=${value}`).then((response) => {
       console.log(response.data.results)
       setBlogs(response.data.results)
     }).catch((e) => {
@@ -44,7 +44,7 @@ const Blog = () => {
   }
 
   useEffect(() => {
-    axios.get('http://127.0.0.1:8000/blog/?ordering=-post_date').then((response) => {
+    axios.get('https://zhaobo-web-backend.herokuapp.com/blog/?ordering=-post_date').then((response) => {
       console.log(response.data.results)
       setBlogs(response.data.results)
       setTotal(response.data.results[0].id)
@@ -65,10 +65,17 @@ const Blog = () => {
           <Search placeholder="Search Blog" size="large" onSearch={handleSearch} allowClear className='blog-search' />
           <div className='blog-categories'>
             <Button onClick={() => { handleSearch('') }} type="text" style={{ color: 'black' }} className="blog-category">AllPosts</Button>
-            <Button onClick={() => { handleSearch('django') }} type="text" style={{ color: 'black' }} className="blog-category">BackEnd</Button>
-            <Button onClick={() => { handleSearch('react') }} type="text" style={{ color: 'black' }} className="blog-category">FrontEnd</Button>
-            <Button onClick={() => { handleSearch('css') }} type="text" style={{ color: 'black' }} className="blog-category">CSS</Button>
+            <Button onClick={() => { handleSearch('backend') }} type="text" style={{ color: 'black' }} className="blog-category">BackEnd</Button>
+            <Button onClick={() => { handleSearch('frontend') }} type="text" style={{ color: 'black' }} className="blog-category">FrontEnd</Button>
+            <Button onClick={() => { handleSearch('react') }} type="text" style={{ color: 'black' }} className="blog-category">React</Button>
+            <Button onClick={() => { handleSearch('django') }} type="text" style={{ color: 'black' }} className="blog-category">Django</Button>
             <Button onClick={() => { handleSearch('algorithm') }} type="text" style={{ color: 'black' }} className="blog-category">Algorithm</Button>
+            <Button onClick={() => { handleSearch('personal') }} type="text" style={{ color: 'black' }} className="blog-category">Personal Thought</Button>
+            <Button onClick={() => { handleSearch('css') }} type="text" style={{ color: 'black' }} className="blog-category">CSS</Button>
+            <Button onClick={() => { handleSearch('nodejs') }} type="text" style={{ color: 'black' }} className="blog-category">NodeJS</Button>
+            <Button onClick={() => { handleSearch('python') }} type="text" style={{ color: 'black' }} className="blog-category">Python</Button>
+            <Button onClick={() => { handleSearch('heroku') }} type="text" style={{ color: 'black' }} className="blog-category">Heroku</Button>
+            <Button onClick={() => { handleSearch('javascript') }} type="text" style={{ color: 'black' }} className="blog-category">Javascript</Button>
           </div>
           <div className="blog-total-posts">
             <h3 className="blog-total">

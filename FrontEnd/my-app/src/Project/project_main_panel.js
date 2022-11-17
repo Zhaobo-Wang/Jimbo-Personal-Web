@@ -12,7 +12,7 @@ const Project_main_panel = (props) => {
 
 
   useEffect(() => {
-    axios.get(`http://127.0.0.1:8000/project/${props.current}`).then(
+    axios.get(`https://zhaobo-web-backend.herokuapp.com/project/${props.current}`).then(
       (response) => {
         console.log(response.data)
         setProject(response.data)
@@ -31,7 +31,7 @@ const Project_main_panel = (props) => {
   return (
     <>
       <div className='overlay' style={{ opacity: displayBody ? 0.4 : 1 }}>
-        <img src={`http://127.0.0.1:8000${project?.image_url}`}
+        <img src={`https://zhaobo-web-backend.herokuapp.com${project?.image_url}`}
           alt="no background"
           className='project-background-image'
         ></img>
