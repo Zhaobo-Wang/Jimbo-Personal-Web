@@ -3,6 +3,11 @@ import './Project.css'
 import axios from 'axios';
 import { Slider } from 'antd';
 import Project_main_panel from './project_main_panel';
+import pic_1 from '../../src/Image/Project/pic_1.jpg';
+import pic_2 from '../../src/Image/Project/pic_2.jpg';
+import pic_3 from '../../src/Image/Project/pic_3.jpg';
+import pic_4 from '../../src/Image/Project/pic_4.jpg';
+import pic_5 from '../../src/Image/Project/pic_5.jpg';
 
 const Project = () => {
 
@@ -11,6 +16,7 @@ const Project = () => {
   const [current, setCurrent] = useState(1)
   const [startArray, setStartArray] = useState(null)
   const [endArray, setEndArray] = useState(null)
+  const Image_Array = [pic_1, pic_2, pic_3, pic_4, pic_5]
 
   const toLeft = () => {
     if (current <= 1) {
@@ -56,10 +62,10 @@ const Project = () => {
             return (
               <>
                 <div className="project-card" key={current}>
-                  <img src={`https://zhaobo-web-backend.herokuapp.com${project.image_url}`} alt="project" className='project-card-image' />
+                  <img src={Image_Array[project?.project_number - 1]} alt="project" className='project-card-image' />
                   <div className="project-container">
-                    <div className='project-date'>{project.project_date}</div>
-                    <div className="project-title">{project.title}</div>
+                    <div className='project-date'>{project?.project_date}</div>
+                    <div className="project-title">{project?.title}</div>
                   </div>
                 </div>
               </>

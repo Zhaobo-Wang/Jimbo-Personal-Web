@@ -3,6 +3,11 @@ import '../App.css'
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import Navigation from '../Navigation/navigation'
+import pic_1 from '../../src/Image/Project/pic_1.jpg';
+import pic_2 from '../../src/Image/Project/pic_2.jpg';
+import pic_3 from '../../src/Image/Project/pic_3.jpg';
+import pic_4 from '../../src/Image/Project/pic_4.jpg';
+import pic_5 from '../../src/Image/Project/pic_5.jpg';
 
 const Project_main_panel = (props) => {
 
@@ -10,6 +15,7 @@ const Project_main_panel = (props) => {
   const [body_array, setBody_array] = useState(null)
   const [displayBody, setDisplayBody] = useState(false)
 
+  const Image_Array = [pic_1,pic_2,pic_3,pic_4,pic_5]
 
   useEffect(() => {
     axios.get(`https://zhaobo-web-backend.herokuapp.com/project/${props.current}`).then(
@@ -31,8 +37,8 @@ const Project_main_panel = (props) => {
   return (
     <>
       <div className='overlay' style={{ opacity: displayBody ? 0.4 : 1 }}>
-        <img src={`https://zhaobo-web-backend.herokuapp.com${project?.image_url}`}
-          alt="no background"
+        <img src={Image_Array[project?.project_number - 1]}
+          alt="no backgrounds"
           className='project-background-image'
         ></img>
       </div>
